@@ -14,9 +14,7 @@ class App extends Component {
         <ol key="relativeList">
           {this.state.relatives.map((name) => (
             <li
-              key={`relativelistitem${
-                1 + this.state.relatives.indexOf({ name })
-              }`}
+              key={`relativeListItem${1 + this.state.relatives.indexOf(name)}`}
             >
               {name}
             </li>
